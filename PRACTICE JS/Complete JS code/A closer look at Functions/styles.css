@@ -1,0 +1,33 @@
+body {
+    scroll-behavior: smooth;
+    height: 100vh;
+    text-align: center;
+    padding: 0px 100px;
+    background: linear-gradient(to top left, #288cb4, #04f591);
+    color : #fff;
+    font-weight : bold;
+  }
+  #title {
+    font-family: sans-serif;
+    font-size: 60px;
+    line-height: 1.3;
+    padding: 40px;
+    width: 100%;
+    color: rgb(141, 115, 141);
+  }
+  h1 {
+    color: rgb(252, 247, 177);
+
+  }
+  button {
+    width: 300px;
+    height: 40px;
+    margin: 40px 20px;
+  }
+  img {
+      width : 100%;
+  }
+  textarea {
+    width: 300px;
+    height: 100px;
+  }

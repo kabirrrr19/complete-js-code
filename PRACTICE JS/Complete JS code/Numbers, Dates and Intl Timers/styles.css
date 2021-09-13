@@ -1,0 +1,28 @@
+
+body {
+    scroll-behavior: smooth;
+    height: 100vh;
+    text-align: center;
+    padding: 0px 100px;
+    background: linear-gradient(to top left, #288cb4, #04f591);
+    color : #fff;
+    font-weight : bold;
+  }
+  h1 {
+    font-family: sans-serif;
+    margin : 30px auto;
+    font-size: 40px;
+    line-height: 1.3;
+    width: 100%;
+    color: rgb(141, 115, 141);
+  }
+
+
+  h4 {
+    font-family: sans-serif;
+    margin : 30px auto;
+    font-size: 24px;
+    line-height: 1.3;
+    width: 100%;
+    color: rgba(255, 0, 149, 0.4);
+  }

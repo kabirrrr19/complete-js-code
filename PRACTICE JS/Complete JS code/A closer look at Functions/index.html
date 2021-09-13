@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Data Structures and Modern Operators</title>
+  </head>
+  <body>
+    <h1 id="title">A closer look at Functions</h1>
+    <h1>The Bind Method</h1>
+      <h3>
+      The bind method returns a new function whose this property is explicitly set to a specific object. <br>
+      <em>
+        eg : const bookLH = book.bind(lufthansa); <br>
+            bookLH(723, 'Eddard Stark'); <br>
+            output : Eddard Stark booked a seat on lufthansa flight LH 723 
+      </em> <br> <br>
+      Along with the this property,  we can also set parameters of the function in the default method <br>
+      <em>
+        eg : const bookLH453 = book.bind(lufthansa, 453); <br>
+            bookLH453('Gregor Clegane'); <br>
+            output : Gregor Clegane booked a seat on lufthansa flight LH 453
+        </em>
+    </h3>
+    <hr style="width:800px">
+    <h1>The call and Apply Method</h1>
+    <h3>
+      The call method helps to set what the this keyword is pointing at for a Function. <br> <i>eg : book.call
+      eurowings, 23, 'Atul' </i>  ====>
+      here we set the this keyword explicitly to point at eurowings object first argument
+    </h3>
+    <h3> 
+        The apply method does the exact same thing but the only difference is that it doesn't recireve a list of arguments
+        after the this keyword but takes an array of arguments. <br>
+        <em>eg :  const passengerJon = [23, 'Jon Snow']; <br>
+        book.apply(swiss, passengerJon); </em>
+    </h3>
+    <hr style="width:800px">
+    <h1>PASSING BY VALUE AND PASSING BY REFERENCE MEANING</h1>
+      <p>
+        Javascript does not have a pass by reference
+        For objects we do in fact pass IN A reference
+        so the MEMORY ADDRESS of the object
+        however that reference is still a value that contains memory address
+        so we pass the reference to the function but not pass by reference
+      </p>
+      <p>
+        first class function is a feature that a programming language has or doesn't have i.e. 
+        all functions are values it's a theory not in practice 
+        However there are higher order functions that are supported because the programming language 
+        supports first class functions
+      </p>
+        
+    <img src="./firstClassFnVSHigherOrderFn.png" alt="Image about first class function and higher order functions">
+    
+    <!-- <script src="./defaultParameter.js"></script> -->
+    <!-- <script src="./passingValueVsReference.js"></script> -->
+    <!-- <script src="./FnsAcceptingCallbackFns.js"></script> -->
+    <!-- <script src="./FnsReturningFns.js"></script> -->
+    <!-- <script src="./call&ApplyMethod.js"></script> -->
+    <!-- <script src="./bindMethod.js"></script> -->
+    <!-- <script src="./IIFE.js"></script> -->
+    <!-- <script src="./closures.js"></script> -->
+    <script src="./closuresPractice.js"></script>
+  </body>
+</html>

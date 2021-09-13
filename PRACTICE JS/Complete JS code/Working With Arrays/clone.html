@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="./icon.png" />
+    <link rel="stylesheet" href="./clone.css">
+    <title>Bankist App</title>
+</head>
+<body>
+    <nav>
+        <p id="nav-left">Good Afternoon, Jessica!</p>
+        <img id="nav-center" src="./logo.png" alt="Logo">
+        <form id="nav-right">
+            <input type="text" value="" placeholder="user">
+            <input type="number" value="" placeholder="PIN">
+            <button id="right-arrow-nav" type="submit"><img  src="./right-arrow.png" alt="Right Arrow"/></button>
+        </form>
+    </nav>
+
+    <main>
+
+        <div class="balance">
+            <p class="balance_label">
+                Current Balance 
+                <span class='balance_date'>
+                    As of &nbsp; <span class='date'> 23/08/2037 &nbsp;13:53</span>
+                </span>
+            </p>
+            <p class="balance_amount">
+                1,&nbsp;20,&nbsp;00&nbsp;$
+            </p>
+        </div>
+
+
+        <section class="bank_details">
+            <div class="movements">
+                <div class="movements_row">
+                    <span class="date_type_wrapper deposit">
+                        <span class="movement_type"> <span class="movement_number">6</span> withdraw</span>
+                        <span class="movement_date">12/11/10</span>
+                    </span>
+                    <span class="movement_value">$26,000&nbsp;</span>
+                </div>
+                <hr>
+                <div class="movements_row">
+                    <span class="date_type_wrapper deposit">
+                        <span class="movement_type"> <span class="movement_number">6</span> withdraw</span>
+                        <span class="movement_date">12/11/10</span>
+                    </span>
+                    <span class="movement_value">$26,000&nbsp;</span>
+                </div>
+                <hr>
+                <div class="movements_row">
+                    <span class="date_type_wrapper deposit">
+                        <span class="movement_type"><span class="movement_number">6</span> withdraw</span>
+                        <span class="movement_date">12/11/10</span>
+                    </span>
+                    <span class="movement_value">$26,000&nbsp;</span>
+                </div>
+                <hr>
+                <div class="movements_row">
+                    <span class="date_type_wrapper deposit">
+                        <span class="movement_type"><span class="movement_number">6</span> withdraw</span>
+                        <span class="movement_date">12/11/10</span>
+                    </span>
+                    <span class="movement_value">$26,000&nbsp;</span>
+                </div>
+                <hr>
+                <div class="movements_row">
+                    <span class="date_type_wrapper deposit">
+                        <span class="movement_type"><span class="movement_number">6</span> withdraw</span>
+                        <span class="movement_date">12/11/10</span>
+                    </span>
+                    <span class="movement_value">$26,000&nbsp;</span>
+                </div>
+                <hr><div class="movements_row">
+                    <span class="date_type_wrapper deposit">
+                        <span class="movement_type"><span class="movement_number">6</span> withdraw</span>
+                        <span class="movement_date">12/11/10</span>
+                    </span>
+                    <span class="movement_value">$26,000&nbsp;</span>
+                </div>
+                <hr><div class="movements_row">
+                    <span class="date_type_wrapper deposit">
+                        <span class="movement_type"><span class="movement_number">6</span> withdraw</span>
+                        <span class="movement_date">12/11/10</span>
+                    </span>
+                    <span class="movement_value">$26,000&nbsp;</span>
+                </div>
+                <hr><div class="movements_row">
+                    <span class="date_type_wrapper deposit">
+                        <span class="movement_type"><span class="movement_number">6</span> withdraw</span>
+                        <span class="movement_date">12/11/10</span>
+                    </span>
+                    <span class="movement_value">$26,000&nbsp;</span>
+                </div>
+                <hr>
+            </div>
+
+
+            <div class="functions">
+                <div class="movement_transfer">
+                    <p class="title">Transfer Money</p>
+                    <form class="align" action="">
+                        <span class="align-span">
+                            <input class="movement_input" type="text" value="" id="transfer_to">
+                            <label for="transfer_to">Transfer to</label>
+                        </span>
+                        <span class="align-span">
+                            <input class="movement_input" type="number" value="" id="transfer_amount">
+                            <label for="transfer_amount">Amount</label>
+                        </span>
+                        <button class="right-arrow" type="submit"><img  src="./right-arrow.png" alt="Right Arrow"/></button>
+                    </form>
+                </div>
+
+                <div class="movement_request">
+                    <p class="title">Request Loan</p>
+                    <form class="align" action="">
+                        <span class="align-span align-span2" >
+                            <input class="movement_input" type="number" value="" id="request_amount"> <br>  <!-- This <br> is a jugaad-->
+                            <label for="request_amount">Amount</label>
+                        </span>
+                        <button class="right-arrow" type="submit"><img  src="./right-arrow.png" alt="Right Arrow"/></button>
+                    </form>
+                </div>
+                
+                <div class="movement_close">
+                    <p class="title">Close Account</p>
+                    <form class="align" action="">
+                        <span class="align-span">
+                            <input class="movement_input" type="text" value="" id="close_user">
+                            <label for="close_user">Confirm User</label>
+                        </span>
+                        <span class="align-span">
+                            <input class="movement_input" type="text" name="" id="close_pin">
+                            <label for="close_pin">Confirm Pin</label>
+                        </span>
+                        <button class="right-arrow" type="submit"><img  src="./right-arrow.png" alt="Right Arrow"/></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        
+        <footer>
+            <div class="in">
+                <span class="in">IN</span>
+                <span class="in_value"> $23,520 </span>            &nbsp;&nbsp;&nbsp;
+                <span class="out">OUT</span>
+                <span class="out_value"> $82,61 </span>            &nbsp;&nbsp;&nbsp;
+                <span class="interest">INTEREST</span>
+                <span class="interest_value"> $5,146 </span>       &nbsp;&nbsp;&nbsp;
+                <span class="sort">
+                    <button id="down-arrow-footer" type="submit"><img  src="./down-arrow.png   " alt="down Arrow"/></button>
+                    <span>Sort</span>
+                </span>
+            </div>
+            <div class="session">
+                You will be logged out in <span class="session_timer">10:00</span>
+            </div>
+    
+        </footer>
+
+        <div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+    </main>
+
+
+    <script src="./bankistApp.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+body {
+    margin : 0;
+    padding: 0;
+    background: #FC354C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0ABFBC, #FC354C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0ABFBC, #FC354C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+ /***********************************LEFT SECTION********************************/
+main {
+    position: relative;
+    left: 5rem;
+    display : flex;
+    flex-direction: column;
+    width : 50%;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.number {
+    font-size: 20rem;
+    text-align: center;
+}
+
+.btn {
+    position: relative;
+    left: 7rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    background-color: white;
+    border-radius: 2rem;
+    cursor: pointer;
+    border-style: none;
+    width:  25rem;
+}
+
+.btn:hover {
+    border: 2px solid;
+}
+
+
+ /***********************************RIGHT SECTION********************************/
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 3rem;
+    margin: 7rem auto;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+}
+
+input {
+    width : 60%;
+    height: 3rem;
+    margin: 2rem auto;
+    border-radius: 1rem;
+    border-style: none;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.check {
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    background-color: white;
+    border-radius: 2rem;
+    cursor: pointer;
+    border-style: none;
+    width: 10rem;
+    margin: 1rem auto 0 auto;
+}
+
+.message {
+    margin-top: 2rem;
+    width : 50%;
+    font-size: 4rem;
+    color: #203333;
+}
+
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:hover {
+    outline: none;
+    border : 2px solid black;
+}
+
+input::placeholder {
+    text-align: center;
+    position: relative;
+    bottom: 0.6rem;
+    font-size: 1.2rem;
+    color : rgb(7, 7, 7);  
+}
